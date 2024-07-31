@@ -83,7 +83,7 @@ This project is built using the following technologies:
 
 5. Run the application:
     ```sh
-    ./mvnw spring-boot:run
+    java -jar target/expense-tracking-0.0.1-SNAPSHOT.jar
     ```
 
 ## Usage
