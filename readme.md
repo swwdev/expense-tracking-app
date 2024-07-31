@@ -81,7 +81,9 @@ This project is built using the following technologies:
 
 4. Update the `application.yml` file with your database or email credentials if necessary.
 
-5. Run the application:
+5. set up jdk 19
+
+6. Run the application:
     ```sh
     ./mvnw spring-boot:run
     ```
