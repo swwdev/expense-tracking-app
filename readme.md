@@ -68,7 +68,7 @@ This project is built using the following technologies:
 2. Set up the application using Docker:
     - Ensure Docker is installed and running.
     - Navigate to the `./docker` directory.
-    - Run the following command to start the database:
+    - Run the following command to start application:
         ```sh
         cd ./docker
         docker-compose up -d
