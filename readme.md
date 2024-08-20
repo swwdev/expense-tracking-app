@@ -65,12 +65,7 @@ This project is built using the following technologies:
     cd expense-tracking-app
     ```
 
-2. Install dependencies:
-    ```sh
-    ./mvnw package
-    ```
-
-3. Set up the database using Docker:
+2. Set up the application using Docker:
     - Ensure Docker is installed and running.
     - Navigate to the `./docker` directory.
     - Run the following command to start the database:
@@ -78,15 +73,6 @@ This project is built using the following technologies:
         cd ./docker
         docker-compose up -d
         ```
-
-4. Update the `application.yml` file with your database or email credentials if necessary.
-
-5. set up jdk 19
-
-6. Run the application:
-    ```sh
-    java -jar target/expense-tracking-0.0.1-SNAPSHOT.jar
-    ```
 
 ## Usage
 - Access the application at `http://localhost:8080`.

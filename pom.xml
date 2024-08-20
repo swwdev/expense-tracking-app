@@ -21,7 +21,6 @@
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
         <org.projectlombok.version>1.18.30</org.projectlombok.version>
         <io.jsonwebtoken.version>0.12.6</io.jsonwebtoken.version>
-        <org.powermock.version>2.0.9</org.powermock.version>
         <org.testcontainers.postgres.version>1.20.0</org.testcontainers.postgres.version>
     </properties>
 
@@ -154,6 +153,12 @@
                             <artifactId>lombok-mapstruct-binding</artifactId>
                         </exclude>
                     </excludes>
+                    <image>
+                        <name>expense-tracking:${project.version}</name>
+                    </image>
+                    <docker>
+                        <host>//./pipe/dockerDesktopLinuxEngine</host>
+                    </docker>
                 </configuration>
             </plugin>
 

@@ -1,13 +1,28 @@
-version: latest
+version: "latest"
 
 services:
   db:
-    container_name: bank
+    container_name: db
     image: postgres:latest
-    restart: always
+    restart: unless-stopped
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
+#    ports:
+#      - "5432:5432"
+    networks:
+      - net
+  app:
+    container_name: app
+    image: dockococo45/expense-tracking:0.0.1-SNAPSHOT
+    restart: unless-stopped
     ports:
-      - "5432:5432"
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - net
+networks:
+  net:
+    driver: bridge
