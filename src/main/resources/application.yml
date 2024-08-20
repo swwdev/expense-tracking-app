@@ -49,4 +49,4 @@ logging:
 server:
   error:
     include-stacktrace: always
-host-name: http://localhost:8080
+app-url: http://localhost:8080

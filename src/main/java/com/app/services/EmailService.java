@@ -42,7 +42,7 @@ public class EmailService {
     @Value("${spring.mail.username}")
     private String from;
 
-    @Value("${host-name}")
+    @Value("${app-url}")
     private String hostName;
 
     @Value("${email.tokens.confirmation-lifetime}")
